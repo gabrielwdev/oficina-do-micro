@@ -1,5 +1,5 @@
 export default function StnFeedbaks() {
-  <>
+  return (
     <section className="feedbacks">
       <ul className="feedback-lista">
         <li className="feedback-lista-card">
@@ -20,5 +20,5 @@ export default function StnFeedbaks() {
         </li>
       </ul>
     </section>
-  </>;
+  );
 }

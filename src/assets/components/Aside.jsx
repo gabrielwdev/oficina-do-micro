@@ -1,5 +1,5 @@
 export default function Aside() {
-  <>
+  return (
     <aside className="aside">
       <img
         src=""
@@ -12,5 +12,5 @@ export default function Aside() {
         <li className="aside-btn-redes-maps"></li>
       </ul>
     </aside>
-  </>;
+  );
 }

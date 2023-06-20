@@ -12,6 +12,7 @@ import Footer from "./assets/components/Footer";
 function App() {
   return (
     <>
+      <h1>test</h1>
       <Header />
       <main className="main">
         <Div />

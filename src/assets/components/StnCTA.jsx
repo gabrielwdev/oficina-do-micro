@@ -1,5 +1,5 @@
 export default function StnCTA() {
-  <>
+  return (
     <section className="cta">
       <h2 className="cta-problema">
         Seu computador ou notebook tem apresentando problemas em sua utilização?
@@ -15,5 +15,5 @@ export default function StnCTA() {
       </p>
       <input type="button" value="Entre em contato" />
     </section>
-  </>;
+  );
 }

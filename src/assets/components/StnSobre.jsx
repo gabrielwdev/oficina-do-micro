@@ -1,6 +1,6 @@
 export default function StnSobre() {
-  <>
-    <sectio className="sobre">
+  return (
+    <section className="sobre">
       <img src="" alt="Logo Oficina do Micro" className="sobre-logo" />
       <p className="sobre-autoridade">
         A Primeira Assistência Técnica de Notebooks de Jacareí | Atendemos Todas
@@ -49,6 +49,6 @@ export default function StnSobre() {
           </p>
         </li>
       </ul>
-    </sectio>
-  </>;
+    </section>
+  );
 }

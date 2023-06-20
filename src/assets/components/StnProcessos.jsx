@@ -1,6 +1,6 @@
 export default function StnProcessos() {
-  <>
-    <sectio className="processos">
+  return (
+    <section className="processos">
       <h2 className="processos-titulo">Nossos Processo de Trabalho</h2>
       <ul className="processos-lista">
         <li className="processos-lista-card">
@@ -54,6 +54,6 @@ export default function StnProcessos() {
           </div>
         </li>
       </ul>
-    </sectio>
-  </>;
+    </section>
+  );
 }

@@ -1,5 +1,5 @@
 export default function StnServicos() {
-  <>
+  return (
     <section className="servicos">
       <h2 className="servicos-titulo"></h2>
       <ul className="servicos-lista">
@@ -65,5 +65,5 @@ export default function StnServicos() {
         </li>
       </ul>
     </section>
-  </>;
+  );
 }

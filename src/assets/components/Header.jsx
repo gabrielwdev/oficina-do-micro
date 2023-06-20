@@ -1,5 +1,5 @@
 export default function Header() {
-  <>
+  return (
     <header className="header">
       <ul className="header-lista">
         <li className="header-lista-btn">
@@ -14,5 +14,5 @@ export default function Header() {
         </li>
       </ul>
     </header>
-  </>;
+  );
 }
