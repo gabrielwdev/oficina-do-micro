@@ -1,6 +1,6 @@
 import Header from "./assets/components/Header";
 import Div from "./assets/components/Div";
-import Aside from "./assets/components/Header";
+import Aside from "./assets/components/Aside";
 import StnServicos from "./assets/components/StnServicos";
 import StnProcessos from "./assets/components/StnProcessos";
 import StnCTA from "./assets/components/StnCTA";
@@ -9,22 +9,25 @@ import StnFeedbaks from "./assets/components/StnFeedbacks";
 import StnContato from "./assets/components/StnContato";
 import Footer from "./assets/components/Footer";
 
+import "./App.css";
+
 function App() {
   return (
     <>
-      <h1>test</h1>
-      <Header />
-      <main className="main">
-        <Div />
-        <Aside />
-      </main>
-      <StnServicos />
-      <StnProcessos />
-      <StnCTA />
-      <StnSobre />
-      <StnFeedbaks />
-      <StnContato />
-      <Footer />
+      <div className="container">
+        <main className="main">
+          <Header />
+          <Div />
+          <Aside />
+        </main>
+        <StnServicos />
+        <StnProcessos />
+        <StnCTA />
+        <StnSobre />
+        <StnFeedbaks />
+        <StnContato />
+        <Footer />
+      </div>
     </>
   );
 }

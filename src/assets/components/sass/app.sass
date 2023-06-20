@@ -1,0 +1,36 @@
+@use 'variables'
+@use 'mixins'
+    
+*
+    padding: 0
+    margin: 0 auto
+    box-sizing: border-box
+    
+.container
+  width: variables.$container-width
+  @include mixins.pilha
+  flex-direction: column
+
+  main
+    background-image: url("../img/bg.png")   
+
+    .header
+      height: 5%
+      width: 100%
+      display: flex
+      
+      &-lista
+        display: flex
+        margin-left: 60%
+        gap: 2rem
+
+        &-btn
+          list-style: none
+
+          &-ancora
+            color: #fff
+
+            &:hover
+              background-color: red
+              padding: 8px
+              border-radius: 50px

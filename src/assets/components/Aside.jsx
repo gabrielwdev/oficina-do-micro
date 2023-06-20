@@ -7,9 +7,9 @@ export default function Aside() {
         className="aside-selo-autoridade"
       />
       <ul className="aside-btn-redes">
-        <li className="aside-btn-redes-whatsapp"></li>
-        <li className="aside-btn-redes-instagram"></li>
-        <li className="aside-btn-redes-maps"></li>
+        <li className="aside-btn-redes-whatsapp">Nosso WhatsApp</li>
+        <li className="aside-btn-redes-instagram">Nosso Portifólio</li>
+        <li className="aside-btn-redes-maps">Nossa Localização</li>
       </ul>
     </aside>
   );

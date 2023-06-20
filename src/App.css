@@ -1,48 +1,40 @@
-#root {
-  max-width: 1280px;
+/* Atalhos */
+/* Responsivo */
+* {
+  padding: 0;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.container main {
+  background-image: url("../img/bg.png");
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container main .header {
+  height: 5%;
+  width: 100%;
+  display: flex;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container main .header-lista {
+  display: flex;
+  margin-left: 60%;
+  gap: 2rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.container main .header-lista-btn {
+  list-style: none;
 }
-
-.card {
-  padding: 2em;
+.container main .header-lista-btn-ancora {
+  color: #fff;
 }
-
-.read-the-docs {
-  color: #888;
+.container main .header-lista-btn-ancora:hover {
+  background-color: red;
+  padding: 8px;
+  border-radius: 50px;
 }
 
-.header {
-  width: 100vw;
-  height: 100vh;
-  background-color: #000;
-}
+/*# sourceMappingURL=App.css.map */

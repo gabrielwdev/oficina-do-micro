@@ -35,16 +35,7 @@ export default function StnContato() {
         </ul>
       </div>
 
-      <div class="informacoes-maps">
-        <iframe
-          src=""
-          class="mapa"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
+      <div class="informacoes-maps"></div>
     </section>
   );
 }
