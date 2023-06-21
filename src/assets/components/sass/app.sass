@@ -6,31 +6,103 @@
     margin: 0 auto
     box-sizing: border-box
     
+    
+    
 .container
   width: variables.$container-width
   @include mixins.pilha
   flex-direction: column
 
-  main
-    background-image: url("../img/bg.png")   
+
+  .main
+    background-color: black
+    width: 100%
+    height: 80vh  
 
     .header
-      height: 5%
+      height: 5em
       width: 100%
       display: flex
+      align-items: center
       
       &-lista
-        display: flex
-        margin-left: 60%
-        gap: 2rem
+        @include mixins.centralizar
+        margin-left: 50rem
+        width: 350px
+        height: 50%
+        justify-content: space-between
 
         &-btn
           list-style: none
+          font-size: 19px
+
+          &:hover
+            background-color: red
+            padding: 3px 12px
+            border-radius: 50px
 
           &-ancora
+            font-weight: 700
             color: #fff
 
+    .destaque
+      display: flex
+
+      .principal
+        margin-top: -5rem
+        margin-left: 10rem
+        width: 35rem
+
+        &-logo
+          width: 30rem
+
+        &-descricao
+          font-size: 27px
+          margin-top: -5rem
+          font-weight: 700
+          color: #fff
+
+      .aside
+        @include mixins.pilha
+        margin-top: 1.5rem
+        width: 35rem
+
+        &-selo-autoridade
+          width: 18rem
+
+        &-btn-redes
+          margin-top: 4.5rem
+          display: flex
+          background-color: blue
+          width: 18rem
+
+
+          &-contato
+            list-style: none
+            width: 50px
+            height: 50px
+            background-color: red
+            @include mixins.centralizar
+            border-radius: 10px
+            
+            &-link
+              display: none
+              
             &:hover
-              background-color: red
-              padding: 8px
-              border-radius: 50px
+              width: 150px
+
+              .bi
+                display: none
+
+              &-link
+                @include mixins.centralizar
+                color: #fff
+                font-size: 17px
+                font-weight: 700
+            
+            .bi
+              @include mixins.centralizar
+              color: #fff
+
+            
+
