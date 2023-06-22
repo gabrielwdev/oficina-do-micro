@@ -159,7 +159,7 @@
     width: 100%;
     margin-top: 12%;
     margin-right: 0;
-    background-color: #ff0000;
+    background-color: #000;
     padding: 1rem 0;
   }
 }
@@ -197,6 +197,7 @@
 }
 .container .main .destaque .aside-btn-redes .whatsapp {
   background-color: #108C15;
+  display: flex;
 }
 .container .main .destaque .aside-btn-redes .instagram {
   background-color: #CA0D2F;
