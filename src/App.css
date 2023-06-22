@@ -18,10 +18,10 @@
   width: 100%;
   height: 80vh;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .container .main {
-    background-size: 300%;
-    height: 76vh;
+    background-size: 70vh;
+    height: 50vh;
     margin-bottom: 5rem;
   }
 }
@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .container .main .header {
     display: none;
   }
@@ -89,13 +89,14 @@
     width: 30%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .container .main .destaque .principal {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
     margin: 0;
   }
 }
@@ -107,9 +108,9 @@
     width: 25rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .container .main .destaque .principal-logo {
-    width: 20rem;
+    width: 10rem;
   }
 }
 .container .main .destaque .principal-descricao {
@@ -132,12 +133,13 @@
     width: 150%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .container .main .destaque .principal-descricao {
     width: 70%;
     padding: 0;
-    margin-top: -2rem;
+    margin-top: -1rem;
     text-align: center;
+    font-size: 15px;
   }
 }
 .container .main .destaque .aside {
@@ -152,7 +154,7 @@
     width: 30%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .container .main .destaque .aside {
     width: 100%;
     margin-top: 12%;
@@ -170,9 +172,9 @@
     width: 14rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .container .main .destaque .aside-selo-autoridade {
-    width: 10rem;
+    width: 7rem;
   }
 }
 .container .main .destaque .aside-btn-redes {
@@ -180,7 +182,7 @@
   display: flex;
   width: 11rem;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .container .main .destaque .aside-btn-redes {
     margin-top: 1rem;
   }
@@ -209,7 +211,7 @@
   border-radius: 10px;
   padding: 0 8px;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .container .main .destaque .aside-btn-redes-contato {
     width: 35px;
     height: 35px;
@@ -228,7 +230,7 @@
 .container .main .destaque .aside-btn-redes-contato:hover {
   width: 190px;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .container .main .destaque .aside-btn-redes-contato:hover {
     width: 170px;
   }
@@ -243,7 +245,7 @@
   font-size: 17px;
   font-weight: 700;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .container .main .destaque .aside-btn-redes-contato:hover .aside-btn-redes-contato-link {
     font-size: 15px;
   }
