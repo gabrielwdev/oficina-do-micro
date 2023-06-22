@@ -9,7 +9,7 @@
     
     
 .container
-  width: variables.$container-width
+  @include mixins.container
   @include mixins.pilha
   flex-direction: column
 
@@ -17,20 +17,34 @@
   .main
     background-color: black
     width: 100%
-    height: 80vh  
+    height: 80vh
+    @include mixins.smartphone
+      background-size: 120%  
+      height: 65vh
+
 
     .header
+      margin-top: 1rem
       height: 5em
       width: 100%
       display: flex
       align-items: center
+
+      @include mixins.smartphone
+        display: none
       
       &-lista
         @include mixins.centralizar
-        margin-left: 50rem
+        margin-left: 60%
         width: 350px
         height: 50%
         justify-content: space-between
+
+        @include mixins.notebook
+          margin-left: 55%
+
+        @include mixins.tablet
+          margin-left: 50%
 
         &-btn
           list-style: none
@@ -38,7 +52,7 @@
 
           &:hover
             background-color: red
-            padding: 3px 12px
+            padding: 8px 12px
             border-radius: 50px
 
           &-ancora
@@ -47,62 +61,127 @@
 
     .destaque
       display: flex
+      flex-wrap: wrap
 
       .principal
-        margin-top: -5rem
-        margin-left: 10rem
-        width: 35rem
+        margin-top: -4.5%
+        margin-left: 8%
+        width: 40%
+
+        @include mixins.notebook
+          width: 35%
+
+        @include mixins.tablet
+          width: 30%
+
+        @include mixins.smartphone
+          width: 100%
+          @include mixins.centralizar
+          margin: 0
 
         &-logo
           width: 30rem
 
+          @include mixins.notebook
+            width: 25rem
+
+          @include mixins.smartphone
+            width: 20rem
+
+
         &-descricao
-          font-size: 27px
+          font-size: 25px
           margin-top: -5rem
           font-weight: 700
           color: #fff
+          padding-left: 8%
+          display: flex
+          flex-wrap: wrap
+          
+
+          @include mixins.notebook
+            margin-top: -4rem
+            font-size: 20px
+            
+
+          @include mixins.tablet
+            width: 150%
+
+          @include mixins.smartphone
+            width: 70%
+            padding: 0
+            margin-top: -2rem
+            text-align: center
 
       .aside
         @include mixins.pilha
-        margin-top: 1.5rem
-        width: 35rem
+        margin-top: 3%
+        margin-right: 8%
+        width: 35%
+
+        @include mixins.notebook
+          width: 30%
+
+        @include mixins.smartphone
+          width: 100%
+          margin-top: 12%
+          margin-right: 0
 
         &-selo-autoridade
           width: 18rem
 
+          @include mixins.notebook
+            width: 14rem
+
+          @include mixins.smartphone
+            width: 10rem
+
         &-btn-redes
           margin-top: 4.5rem
           display: flex
-          background-color: blue
-          width: 18rem
+          width: 11rem
+
+          @include mixins.smartphone
+            margin-top: 1rem
+
+          &:hover
+            width: 19rem
+
+          .whatsapp
+            background-color: #108C15
+          .instagram
+            background-color: #CA0D2F
+          .maps
+            background-color: #B21010
 
 
           &-contato
             list-style: none
             width: 50px
             height: 50px
-            background-color: red
             @include mixins.centralizar
             border-radius: 10px
+            padding: 0 8px
             
             &-link
               display: none
               
+            .bi
+              @include mixins.centralizar
+              color: #fff
+            
+
             &:hover
-              width: 150px
+              width: 190px
 
-              .bi
-                display: none
 
-              &-link
+              .aside-btn-redes-contato-link
+                display: block
                 @include mixins.centralizar
                 color: #fff
                 font-size: 17px
                 font-weight: 700
-            
-            .bi
-              @include mixins.centralizar
-              color: #fff
+                
 
             
 

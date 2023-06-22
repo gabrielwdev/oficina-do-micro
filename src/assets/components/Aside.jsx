@@ -9,7 +9,7 @@ export default function Aside() {
         className="aside-selo-autoridade"
       />
       <ul className="aside-btn-redes">
-        <li className="aside-btn-redes-contato">
+        <li className="aside-btn-redes-contato whatsapp">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="22"
@@ -24,7 +24,7 @@ export default function Aside() {
             Nosso WhatsApp
           </a>
         </li>
-        <li className="aside-btn-redes-contato">
+        <li className="aside-btn-redes-contato instagram">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="22"
@@ -39,7 +39,7 @@ export default function Aside() {
             Nosso Portifólio
           </a>
         </li>
-        <li className="aside-btn-redes-contato">
+        <li className="aside-btn-redes-contato maps">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="22"
