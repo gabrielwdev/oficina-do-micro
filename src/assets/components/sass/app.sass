@@ -15,6 +15,7 @@
 
 
   .main
+
     background-color: black
     width: 100%
     height: 80vh
@@ -129,7 +130,7 @@
           width: 100%
           margin-top: 12%
           margin-right: 0
-          background-color: #000
+          background-color: #000 
           padding: 1rem 0
 
         &-selo-autoridade
@@ -201,5 +202,45 @@
                 @include mixins.smartphone
                   font-size: 15px
 
-            
+  .servicos
+    @include mixins.pilha
+    margin: 0 auto
+    row-gap: 5rem
+    padding: 7rem 0
 
+    &-titulo
+
+    &-lista
+      @include mixins.centralizar
+      flex-wrap: wrap
+      width: 80%
+      gap: 3rem
+
+      &-card
+        list-style: none
+        
+
+        &-link
+          color: #000
+          width: 11rem
+          height: 17rem
+          border: solid 2px 
+          border-radius: 20px
+          @include mixins.pilha
+
+          &:hover
+            border: #B00703 2px solid
+            color: #B00703
+
+          &-img
+            width: 9rem
+            height: 9rem
+            border-radius: 10px
+            margin: 1rem 0 0 .8rem
+            position: absolute
+
+          &-titulo
+            text-align: center
+            font-size: 20px
+            margin-top: 110%
+            width: 8rem
