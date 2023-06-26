@@ -211,6 +211,9 @@
     &-titulo
       font-size: 36px
 
+      @include mixins.smartphone
+        font-size: 28px
+
     &-lista
       @include mixins.centralizar
       flex-wrap: wrap
@@ -218,6 +221,9 @@
       gap: 9rem 1rem
       padding: 2rem
       margin-top: 3rem
+
+      @include mixins.smartphone
+        gap: 5rem
 
       &-card
         list-style: none
@@ -265,6 +271,11 @@
     &-titulo
       font-size: 36px
 
+      @include mixins.smartphone
+        font-size: 28px
+        width: 15rem
+        text-align: center
+
     &-lista
       display: flex
       flex-wrap: wrap
@@ -279,6 +290,9 @@
         list-style: none
         border-radius: 15px
 
+        @include mixins.smartphone
+          height: 24rem
+
         &-circulo
           position: absolute
           width: 4rem
@@ -291,16 +305,29 @@
           font-weight: bold
           margin: -2rem  11.5rem
 
+          @include mixins.smartphone
+            margin: -2rem 9.2rem
+
         &-conteudo
           margin: 5rem 3rem
           width: 80%
 
+          @include mixins.smartphone
+              margin: 5rem 2rem
+
+
           &-titulo
             font-size: 30px
+
+            @include mixins.smartphone
+              font-size: 26px  
             
 
           &-descricao
             font-size: 25px
             margin-top: 15%
+
+            @include mixins.smartphone
+              font-size: 22px
 
 

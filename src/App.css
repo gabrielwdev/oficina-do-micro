@@ -265,6 +265,11 @@
 .container .servicos-titulo {
   font-size: 36px;
 }
+@media (max-width: 500px) {
+  .container .servicos-titulo {
+    font-size: 28px;
+  }
+}
 .container .servicos-lista {
   display: flex;
   justify-content: center;
@@ -275,6 +280,11 @@
   gap: 9rem 1rem;
   padding: 2rem;
   margin-top: 3rem;
+}
+@media (max-width: 500px) {
+  .container .servicos-lista {
+    gap: 5rem;
+  }
 }
 .container .servicos-lista-card {
   list-style: none;
@@ -323,6 +333,13 @@
 .container .processos-titulo {
   font-size: 36px;
 }
+@media (max-width: 500px) {
+  .container .processos-titulo {
+    font-size: 28px;
+    width: 15rem;
+    text-align: center;
+  }
+}
 .container .processos-lista {
   display: flex;
   flex-wrap: wrap;
@@ -336,6 +353,11 @@
   border: solid 1px black;
   list-style: none;
   border-radius: 15px;
+}
+@media (max-width: 500px) {
+  .container .processos-lista-card {
+    height: 24rem;
+  }
 }
 .container .processos-lista-card-circulo {
   position: absolute;
@@ -352,16 +374,36 @@
   font-weight: bold;
   margin: -2rem 11.5rem;
 }
+@media (max-width: 500px) {
+  .container .processos-lista-card-circulo {
+    margin: -2rem 9.2rem;
+  }
+}
 .container .processos-lista-card-conteudo {
   margin: 5rem 3rem;
   width: 80%;
 }
+@media (max-width: 500px) {
+  .container .processos-lista-card-conteudo {
+    margin: 5rem 2rem;
+  }
+}
 .container .processos-lista-card-conteudo-titulo {
   font-size: 30px;
+}
+@media (max-width: 500px) {
+  .container .processos-lista-card-conteudo-titulo {
+    font-size: 26px;
+  }
 }
 .container .processos-lista-card-conteudo-descricao {
   font-size: 25px;
   margin-top: 15%;
+}
+@media (max-width: 500px) {
+  .container .processos-lista-card-conteudo-descricao {
+    font-size: 22px;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */
