@@ -3,7 +3,7 @@
     
 *
     padding: 0
-    margin: 0 auto
+    margin: 0
     box-sizing: border-box
     
     
@@ -64,6 +64,7 @@
     .destaque
       display: flex
       flex-wrap: wrap
+      
 
       .principal
         margin-top: -4.5%
@@ -119,9 +120,8 @@
 
       .aside
         @include mixins.pilha
-        margin-top: 3%
-        margin-right: 8%
         width: 35%
+        margin: 3% -10% 0 0 
 
         @include mixins.notebook
           width: 30%
@@ -210,6 +210,7 @@
 
     &-titulo
       font-size: 36px
+      text-align: center
 
       @include mixins.smartphone
         font-size: 28px
@@ -217,9 +218,8 @@
     &-lista
       @include mixins.centralizar
       flex-wrap: wrap
-      width: 80%
       gap: 9rem 1rem
-      padding: 2rem
+      padding: 2rem 8rem
       margin-top: 3rem
 
       @include mixins.smartphone
@@ -267,19 +267,20 @@
   .processos
     @include mixins.pilha
     padding: 2rem 0
+    margin: 0 auto
 
     &-titulo
       font-size: 36px
+      text-align: center
 
       @include mixins.smartphone
         font-size: 28px
         width: 15rem
-        text-align: center
 
     &-lista
       display: flex
       flex-wrap: wrap
-      row-gap: 3rem
+      gap: 3rem
       margin: 8rem auto
       width: 74%
 
@@ -331,3 +332,157 @@
               font-size: 22px
 
 
+
+
+  .informacoes
+    background-image: url(../img/bg-2.png)
+    background-color: #ffffff
+    padding: 50px
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    justify-content: center
+    column-gap: 10px
+    border-top: 5px solid #35353535
+
+    @include mixins.notebook
+        grid-template-columns: repeat(2, 1fr)
+
+    @include mixins.tablet
+        grid-template-columns: 1fr
+        padding: 50px
+
+    &-loja
+      display: block
+      flex-direction: column
+      row-gap: 20px
+      max-width: 400px
+
+      @include mixins.tablet
+        display: none
+
+      h2
+        font-family: "Roboto", sans-serif
+        font-size: 20px 
+        margin-bottom: 2rem 
+
+      p
+        font-size: 17px   
+
+    &-canais
+      display: block
+      flex-direction: column
+
+      @include mixins.tablet
+        margin: 80px auto
+
+      h2
+        font-family: "Roboto", sans-serif
+        font-size: 20px  
+        margin-bottom: 1rem
+
+      p
+        font-size: 13px   
+        
+      a
+        text-decoration: none
+        color: #363636
+        &:hover
+          color: #ffbf00
+
+    &-link
+      @include mixins.pilha
+      row-gap: 1rem
+
+      margin-top: 1rem
+
+      a
+        display: flex
+        column-gap: .5rem
+
+        address
+          font-size: 14px
+
+      ul 
+        display: flex
+        list-style: none
+        column-gap: 10px
+
+        .bi
+          width: 25px
+          height: 25px
+          color: #363636
+
+          &:hover
+            color: #ffbf00
+        
+    &-link
+        color: #363636
+
+        &:hover
+            color: #ffbf00
+    
+    .numero
+        font-size: 30px
+        font-weight: bold
+    
+    &-maps
+      display: flex
+      justify-content: center
+      
+      iframe
+        border: 0
+        allowfullscreen: 0
+        loading: lazy
+        referrerpolicy: no-referrer-when-downgrade
+        width: 350px
+        height: 200px
+        @include mixins.notebook
+          justify-content: center
+          margin-top: 50px
+
+        @include mixins.tablet
+          margin: 20px auto
+        @include mixins.smartphone
+          width: 300px
+          height: 190px
+
+  .footer
+    background-color: variables.$bg-color
+    border-top: 5px solid variables.$ilustrator-color
+
+    &-navbar
+      @include mixins.container
+      @include mixins.centralizar
+      justify-content: space-between
+            
+      @include mixins.tablet
+        row-gap: 30px
+        flex-direction: column
+
+      &-logo
+        width: 10rem
+
+      &-link
+        text-decoration: none
+        color: variables.$secondary-color
+                
+      .bi
+        width: 3rem
+        height: 3rem
+            
+      &-complementos
+        text-align: center
+        font-family: Arial, Helvetica, sans-serif
+        font-size: 13px
+        // color: #3d3d3d
+
+          &-link
+            text-decoration: none
+            color: #3d3d3d
+
+            &:hover
+              text-decoration: underline
+                        
+                    
+            
+                
