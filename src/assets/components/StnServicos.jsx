@@ -2,10 +2,10 @@ import preventiva from "./img/manutencao-preventiva.png";
 import resina from "./img/reparo-carcaca.png";
 import eletronica from "./img/reparo-eletronico.png";
 import limpeza from "./img/lp.jpg";
-import ssd from "./img/ssd.jpg";
-import tela from "./img/troca-de-tela.jpg";
+import ssd from "./img/ssd.png";
+import tela from "./img/troca-de-tela.png";
 import mainbord from "./img/troca-de-placa-mae.png";
-import teclado from "./img/troca-teclado.jpg";
+import teclado from "./img/troca-teclado.png";
 
 export default function StnServicos() {
   return (

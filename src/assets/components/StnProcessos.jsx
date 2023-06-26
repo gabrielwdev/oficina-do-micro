@@ -46,10 +46,8 @@ export default function StnProcessos() {
               Testes e controle de qualidade
             </h3>
             <p className="div processos-lista-card-conteudo-descricao">
-              Realizaremos diversos testes de usabilidade, se for encontrado
-              qualquer problema, o cliente será avisado e o equipamento
-              retornará à etapa 2 do processo para que seja realizado ajustes
-              adicionais.
+              Realizaremos diversos testes de usabilidade, afim de garantir que
+              o problema tenha sido 100% resolvido
             </p>
           </div>
         </li>

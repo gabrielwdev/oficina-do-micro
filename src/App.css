@@ -260,7 +260,10 @@
   flex-direction: column;
   margin: 0 auto;
   row-gap: 5rem;
-  padding: 7rem 0;
+  padding: 8rem 0;
+}
+.container .servicos-titulo {
+  font-size: 36px;
 }
 .container .servicos-lista {
   display: flex;
@@ -269,36 +272,96 @@
   flex-wrap: wrap;
   flex-wrap: wrap;
   width: 80%;
-  gap: 3rem;
+  gap: 9rem 1rem;
+  padding: 2rem;
+  margin-top: 3rem;
 }
 .container .servicos-lista-card {
   list-style: none;
 }
 .container .servicos-lista-card-link {
   color: #000;
-  width: 11rem;
-  height: 17rem;
-  border: solid 2px;
+  width: 13rem;
+  height: 16rem;
+  border: solid 1px;
   border-radius: 20px;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
 }
 .container .servicos-lista-card-link:hover {
   border: #B00703 2px solid;
   color: #B00703;
+  height: 22rem;
+  margin-top: -4rem;
+}
+.container .servicos-lista-card-link:hover .servicos-lista-card-link-img {
+  margin: 1rem 0 0 0.9rem;
+}
+.container .servicos-lista-card-link:hover .servicos-lista-card-link-titulo {
+  margin-top: 120%;
 }
 .container .servicos-lista-card-link-img {
-  width: 9rem;
-  height: 9rem;
+  width: 11rem;
+  height: 12rem;
   border-radius: 10px;
-  margin: 1rem 0 0 0.8rem;
+  background-color: black;
+  margin: -5rem 0 0 0.9rem;
   position: absolute;
 }
 .container .servicos-lista-card-link-titulo {
   text-align: center;
-  font-size: 20px;
-  margin-top: 110%;
-  width: 8rem;
+  font-size: 24px;
+  margin-top: 70%;
+  width: 10rem;
+}
+.container .processos {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+.container .processos-titulo {
+  font-size: 36px;
+}
+.container .processos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+  margin: 8rem auto;
+  width: 74%;
+}
+.container .processos-lista-card {
+  width: 27rem;
+  height: 27rem;
+  border: solid 1px black;
+  list-style: none;
+  border-radius: 15px;
+}
+.container .processos-lista-card-circulo {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  background-color: black;
+  color: #FFB904;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 25px;
+  font-weight: bold;
+  margin: -2rem 11.5rem;
+}
+.container .processos-lista-card-conteudo {
+  margin: 5rem 3rem;
+  width: 80%;
+}
+.container .processos-lista-card-conteudo-titulo {
+  font-size: 30px;
+}
+.container .processos-lista-card-conteudo-descricao {
+  font-size: 25px;
+  margin-top: 15%;
 }
 
 /*# sourceMappingURL=App.css.map */
