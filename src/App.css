@@ -79,7 +79,7 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 12rem;
-  padding: 0 auto 5rem auto;
+  padding: 0 auto;
 }
 @media (max-width: 1000px) {
   .container .main .destaque {
@@ -87,9 +87,12 @@
   }
 }
 .container .main .destaque .principal {
-  margin-top: -4.5%;
+  margin-top: 4rem;
   margin-left: 8%;
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 @media (max-width: 1000px) {
   .container .main .destaque .principal {
@@ -132,7 +135,6 @@
 }
 .container .main .destaque .principal-descricao {
   font-size: 25px;
-  margin-top: -5rem;
   font-weight: 700;
   color: #fff;
   padding-left: 8%;
@@ -388,7 +390,6 @@
   flex-direction: column;
   padding: 2rem 0;
   margin: 0 auto;
-  min-width: 470px;
 }
 .container .processos-titulo {
   font-size: 36px;
@@ -404,16 +405,26 @@
 .container .processos-lista {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   margin: 8rem auto;
   width: 74%;
 }
 .container .processos-lista-card {
   width: 27rem;
-  height: 27rem;
-  border: solid 1px black;
+  height: 30rem;
   list-style: none;
-  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 850px) {
+  .container .processos-lista-card {
+    height: 25rem;
+  }
 }
 @media (max-width: 600px) {
   .container .processos-lista-card {
@@ -421,7 +432,6 @@
   }
 }
 .container .processos-lista-card-circulo {
-  position: absolute;
   width: 4rem;
   height: 4rem;
   background-color: black;
@@ -433,37 +443,50 @@
   flex-wrap: wrap;
   font-size: 25px;
   font-weight: bold;
-  margin: -2rem 11.5rem;
+  margin-bottom: -3rem;
+  position: relative;
 }
-@media (max-width: 600px) {
+@media (max-width: 850px) {
   .container .processos-lista-card-circulo {
-    margin: -2rem 9.2rem;
+    margin-bottom: -5rem;
   }
 }
-.container .processos-lista-card-conteudo {
+.container .processos-lista-card-container {
+  width: 25rem;
+  height: 27rem;
+  border: solid 1px black;
+  border-radius: 15px;
+}
+@media (max-width: 850px) {
+  .container .processos-lista-card-container {
+    height: 20rem;
+  }
+}
+.container .processos-lista-card-container-conteudo {
   margin: 5rem 3rem;
   width: 80%;
 }
 @media (max-width: 600px) {
-  .container .processos-lista-card-conteudo {
+  .container .processos-lista-card-container-conteudo {
     margin: 5rem 2rem;
   }
 }
-.container .processos-lista-card-conteudo-titulo {
+.container .processos-lista-card-container-conteudo-titulo {
   font-size: 30px;
 }
 @media (max-width: 600px) {
-  .container .processos-lista-card-conteudo-titulo {
+  .container .processos-lista-card-container-conteudo-titulo {
     font-size: 26px;
   }
 }
-.container .processos-lista-card-conteudo-descricao {
+.container .processos-lista-card-container-conteudo-descricao {
   font-size: 25px;
   margin-top: 15%;
 }
-@media (max-width: 600px) {
-  .container .processos-lista-card-conteudo-descricao {
+@media (max-width: 850px) {
+  .container .processos-lista-card-container-conteudo-descricao {
     font-size: 22px;
+    margin-top: 10%;
   }
 }
 .container .informacoes {
@@ -597,7 +620,7 @@
 }
 .container .footer {
   background-color: #000;
-  padding: 0 5rem;
+  padding: 2rem 5rem;
   color: #fff;
   border-top: 5px solid #ffd900;
 }
