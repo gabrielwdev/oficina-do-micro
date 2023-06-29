@@ -388,7 +388,7 @@
 .container .processos {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  width: 100%;
 }
 .container .processos-titulo {
   font-size: 36px;
@@ -399,6 +399,7 @@
   .container .processos-titulo {
     font-size: 28px;
     width: 15rem;
+    padding-top: 4rem;
   }
 }
 .container .processos-lista {
@@ -410,6 +411,11 @@
   flex-wrap: wrap;
   margin: 8rem auto;
   width: 74%;
+}
+@media (max-width: 600px) {
+  .container .processos-lista {
+    margin: 5rem auto;
+  }
 }
 .container .processos-lista-card {
   width: 27rem;
@@ -429,7 +435,6 @@
 @media (max-width: 600px) {
   .container .processos-lista-card {
     height: 24rem;
-    width: 80%;
   }
 }
 .container .processos-lista-card-circulo {

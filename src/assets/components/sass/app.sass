@@ -310,7 +310,7 @@
 
   .processos
     @include mixins.pilha
-    margin: 0 auto
+    width: 100%
 
     &-titulo
       font-size: 36px
@@ -320,6 +320,7 @@
       @include mixins.smartphone
         font-size: 28px
         width: 15rem
+        padding-top: 4rem
 
     &-lista
       display: flex
@@ -327,6 +328,9 @@
       @include mixins.centralizar
       margin: 8rem auto
       width: 74%
+
+      @include mixins.smartphone
+        margin: 5rem auto
 
       &-card
         width: 27rem
@@ -340,7 +344,6 @@
 
         @include mixins.smartphone
           height: 24rem
-          width: 80%
 
         &-circulo
             width: 4rem
