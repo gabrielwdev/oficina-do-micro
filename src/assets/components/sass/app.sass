@@ -310,7 +310,6 @@
 
   .processos
     @include mixins.pilha
-    padding: 2rem 0
     margin: 0 auto
 
     &-titulo
@@ -334,12 +333,14 @@
         height: 30rem
         list-style: none
         @include mixins.centralizar
+        flex-direction: column
 
         @include mixins.tablet
           height: 25rem
 
         @include mixins.smartphone
           height: 24rem
+          width: 80%
 
         &-circulo
             width: 4rem
@@ -350,12 +351,8 @@
             @include mixins.centralizar
             font-size: 25px
             font-weight: bold
-            margin-bottom: -3rem
+            margin-bottom: -2rem
             position: relative
-
-            @include mixins.tablet
-              margin-bottom: -5rem
-            @include mixins.smartphone
 
         &-container
           width: 25rem
@@ -365,13 +362,15 @@
 
           @include mixins.tablet
             height: 20rem
+            width: 21rem
 
           &-conteudo
-            margin: 5rem 3rem
+            margin: 5rem auto
             width: 80%
 
             @include mixins.smartphone
-                margin: 5rem 2rem
+                margin: 5rem auto
+                width: 90%
 
             &-titulo
               font-size: 30px
@@ -398,7 +397,7 @@
     justify-content: center
     column-gap: 10px
     border-top: 5px solid #35353535
-
+ 
     @include mixins.notebook
         grid-template-columns: repeat(2, 1fr)
 
@@ -502,6 +501,7 @@
           height: 190px
 
   .footer
+    width: 100%  
     background-color: variables.$bg-color
     padding: 2rem 5rem
     color: variables.$secondary-color
