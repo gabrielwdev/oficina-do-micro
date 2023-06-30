@@ -1,6 +1,7 @@
 export default function StnFeedbaks() {
   return (
     <section className="feedbacks">
+      <h2 className="feedbaks-titulo">Avaliações no Google Business</h2>
       <ul className="feedback-lista">
         <li className="feedback-lista-card">
           <h2 className="feedback-lista-card-titulo">Monique Ruis</h2>
