@@ -15,6 +15,6 @@ main {
 .sobre {
   background-image: url(./assets/components/img/loja-oficina-do-micro.jpg);
   background-repeat: no-repeat;
-  background-size: 140%;
+  background-size: 120%;
   background-position: 30%;
 }
