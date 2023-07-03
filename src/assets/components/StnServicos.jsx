@@ -9,7 +9,7 @@ import teclado from "./img/troca-teclado.png";
 
 export default function StnServicos() {
   return (
-    <section className="servicos">
+    <section id="nossos-servicos" className="servicos">
       <h2 className="servicos-titulo">Nossos Serviços</h2>
       <ul className="servicos-lista">
         <li className="servicos-lista-card">

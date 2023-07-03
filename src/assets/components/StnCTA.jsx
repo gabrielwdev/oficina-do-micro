@@ -13,7 +13,7 @@ export default function StnCTA() {
         E então você está esperando o que? <br /> Entre em contato hoje mesmo,
         nossa equipe está pronta para te atender!
       </p>
-      <a href="">
+      <a href="https://wa.me/551239531480">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="22"

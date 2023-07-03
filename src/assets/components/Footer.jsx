@@ -14,9 +14,12 @@ export default function Footer() {
             </a>
           </p>
           <address>
-            R. Cap. Antônio de Oliveira, 41 - Parque Brasil, Jacareí - SP,
-            <a class="footer-navbar-complementos-link" href="">
-              12328-420
+            R. Dr. Lúcio Malta, 393 - Loja 47 - Centro, Jacareí - SP,
+            <a
+              class="footer-navbar-complementos-link"
+              href="https://www.google.com/maps/place/OFICINA+DO+MICRO/@-23.3035782,-45.9695351,15z/data=!4m6!3m5!1s0x94cdcbe08cfd486f:0xbb117272cf5918d5!8m2!3d-23.3035782!4d-45.9695351!16s%2Fg%2F11grrc1xff?entry=ttu"
+            >
+              12327-703
             </a>
           </address>
         </div>

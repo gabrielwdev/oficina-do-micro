@@ -2,7 +2,7 @@ import Logo from "./img/logo-oficina-do-micro.png";
 
 export default function StnSobre() {
   return (
-    <section className="sobre">
+    <section id="quem-somos" className="sobre">
       <img src={Logo} alt="Logo Oficina do Micro" className="sobre-logo" />
       <p className="sobre-autoridade">
         A Primeira Assistência Técnica de Notebooks de Jacareí | Atendemos Todas

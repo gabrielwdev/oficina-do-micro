@@ -105,7 +105,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    margin-left: 0;
+    margin-left: 8%;
   }
 }
 @media (max-width: 600px) {
@@ -176,7 +176,6 @@
   .container .main .destaque .aside {
     width: 100%;
     margin-right: 0;
-    padding: 1rem 0;
   }
 }
 @media (max-width: 600px) {
@@ -505,12 +504,12 @@
   padding: 5rem 0;
 }
 .container .cta-problema {
-  font-size: 30px;
+  font-size: 27px;
   font-weight: bold;
   width: 70%;
 }
 .container .cta-solucao, .container .cta-clique-aqui {
-  font-size: 25px;
+  font-size: 22px;
   width: 64%;
 }
 .container .cta a {
@@ -552,7 +551,9 @@
 }
 @media (max-width: 600px) {
   .container .sobre {
-    background-size: 355%;
+    background-size: 120%;
+    background-color: black;
+    background-position-y: 0%;
   }
 }
 .container .sobre-logo {
@@ -595,7 +596,7 @@
 }
 .container .sobre-lista-card-categoria {
   color: #ffc900;
-  background-color: black;
+  background-color: #0d0d0d;
   height: 2.5rem;
   font-size: 20px;
   text-align: center;
@@ -786,7 +787,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 .container .feedbacks-lista-card {
@@ -795,9 +796,9 @@
   display: flex;
   flex-direction: column;
   padding: 2rem 2rem;
-  gap: 2rem 2rem;
+  gap: 2rem;
   width: 17rem;
-  height: 25rem;
+  height: 21rem;
   border: 1px solid #000;
 }
 .container .feedbacks-lista-card-container {
@@ -824,6 +825,7 @@
   flex-wrap: wrap;
 }
 .container .feedbacks-lista-card-comentario {
+  width: 100%;
   height: 80%;
 }
 .container .feedbacks-lista .link {
