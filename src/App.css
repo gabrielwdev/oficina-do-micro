@@ -64,6 +64,7 @@
 .container .main .header-lista-btn {
   list-style: none;
   font-size: 19px;
+  transition-duration: 0.8s;
 }
 .container .main .header-lista-btn:hover {
   background-color: red;
@@ -627,6 +628,81 @@
   padding: 1.5rem 1.5rem 0 1.5rem;
   font-size: 16px;
 }
+.container .feedbacks {
+  padding: 5rem 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.container .feedbacks-titulo {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .container .feedbacks-titulo {
+    font-size: 28px;
+    width: 15rem;
+  }
+}
+.container .feedbacks-lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.container .feedbacks-lista-card {
+  list-style: none;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  gap: 2rem;
+  width: 17rem;
+  height: 30rem;
+  border: 1px solid #000;
+}
+.container .feedbacks-lista-card-container {
+  display: flex;
+  gap: 1rem;
+}
+.container .feedbacks-lista-card-container-perfil {
+  grid-area: img;
+  width: 50px;
+  height: 50px;
+}
+.container .feedbacks-lista-card-container-avaliacao {
+  width: 4rem;
+  height: 0.8rem;
+}
+.container .feedbacks-lista-card-nome {
+  grid-area: titulo;
+  font-size: 17px;
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container .feedbacks-lista-card-comentario {
+  width: 100%;
+  height: 80%;
+}
+.container .feedbacks-lista .link {
+  color: #0C70A9;
+  font-size: 17px;
+  text-align: center;
+}
 .container .informacoes {
   background-image: url(../img/bg-2.png);
   background-color: #ffffff;
@@ -634,7 +710,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  column-gap: 10px;
+  column-gap: 2rem;
   border-top: 5px solid rgba(53, 53, 53, 0.2078431373);
 }
 @media (max-width: 1000px) {
@@ -755,81 +831,6 @@
     width: 300px;
     height: 190px;
   }
-}
-.container .feedbacks {
-  padding: 5rem 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-}
-.container .feedbacks-titulo {
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
-  flex-wrap: wrap;
-}
-@media (max-width: 600px) {
-  .container .feedbacks-titulo {
-    font-size: 28px;
-    width: 15rem;
-  }
-}
-.container .feedbacks-lista {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-.container .feedbacks-lista-card {
-  list-style: none;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 2rem;
-  gap: 2rem;
-  width: 17rem;
-  height: 21rem;
-  border: 1px solid #000;
-}
-.container .feedbacks-lista-card-container {
-  display: flex;
-  gap: 1rem;
-}
-.container .feedbacks-lista-card-container-perfil {
-  grid-area: img;
-  width: 50px;
-  height: 50px;
-}
-.container .feedbacks-lista-card-container-avaliacao {
-  width: 4rem;
-  height: 1rem;
-}
-.container .feedbacks-lista-card-nome {
-  grid-area: titulo;
-  font-size: 17px;
-  width: 100%;
-  height: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.container .feedbacks-lista-card-comentario {
-  width: 100%;
-  height: 80%;
-}
-.container .feedbacks-lista .link {
-  color: #0C70A9;
-  font-size: 17px;
-  text-align: center;
 }
 .container .footer {
   width: 100%;

@@ -9,17 +9,22 @@ export default function Footer() {
           <p>
             © 2023 Oficina do Micro. Todos os direitos reservados | Site
             Desenvolvido por
-            <a class="footer-navbar-complementos-link" href="">
-              Gabriel BS
+            <a
+              target="_blank"
+              class="footer-navbar-complementos-link"
+              href="https://www.linkedin.com/in/paulo-gabriel-bom-sucesso-machado-592236230/"
+            >
+              &nbsp;Paulo Gabriel
             </a>
           </p>
           <address>
             R. Dr. Lúcio Malta, 393 - Loja 47 - Centro, Jacareí - SP,
             <a
+              target="_blank"
               class="footer-navbar-complementos-link"
               href="https://www.google.com/maps/place/OFICINA+DO+MICRO/@-23.3035782,-45.9695351,15z/data=!4m6!3m5!1s0x94cdcbe08cfd486f:0xbb117272cf5918d5!8m2!3d-23.3035782!4d-45.9695351!16s%2Fg%2F11grrc1xff?entry=ttu"
             >
-              12327-703
+              &nbsp;12327-703
             </a>
           </address>
         </div>
