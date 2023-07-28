@@ -13,7 +13,7 @@ export default function StnServicos() {
       <h2 className="servicos-titulo">Nossos Serviços</h2>
       <ul className="servicos-lista">
         <li className="servicos-lista-card">
-          <a className="servicos-lista-card-link" href="">
+          <div className="servicos-lista-card-link">
             <img
               src={ssd}
               alt="Troca de HD por SSD"
@@ -22,13 +22,10 @@ export default function StnServicos() {
             <h3 className="servicos-lista-card-link-titulo">
               Troca de HD x SSD
             </h3>
-          </a>
+          </div>
         </li>
         <li className="servicos-lista-card">
-          <a
-            className="servicos-lista-card-link"
-            href="servicos-lista-card-link"
-          >
+          <div className="servicos-lista-card-link">
             <img
               src={teclado}
               alt="Troca de Teclado"
@@ -37,13 +34,10 @@ export default function StnServicos() {
             <h3 className="servicos-lista-card-link-titulo">
               Troca de Teclado
             </h3>
-          </a>
+          </div>
         </li>
         <li className="servicos-lista-card">
-          <a
-            className="servicos-lista-card-link"
-            href="servicos-lista-card-link"
-          >
+          <div className="servicos-lista-card-link">
             <img
               src={mainbord}
               alt="Troca de Placa-Mãe"
@@ -52,30 +46,30 @@ export default function StnServicos() {
             <h3 className="servicos-lista-card-link-titulo">
               Troca de Placa-Mãe
             </h3>
-          </a>
+          </div>
         </li>
         <li className="servicos-lista-card">
-          <a className="servicos-lista-card-link" href="">
+          <div className="servicos-lista-card-link" href="">
             <img
               src={tela}
               alt="Troca de Tela"
               className="servicos-lista-card-link-img"
             />
             <h3 className="servicos-lista-card-link-titulo">Troca de Tela</h3>
-          </a>
+          </div>
         </li>
         <li className="servicos-lista-card">
-          <a className="servicos-lista-card-link" href="">
+          <div className="servicos-lista-card-link">
             <img
               src={eletronica}
               alt="Reparo em Placa"
               className="servicos-lista-card-link-img"
             />
             <h3 className="servicos-lista-card-link-titulo">Reparo em Placa</h3>
-          </a>
+          </div>
         </li>
         <li className="servicos-lista-card">
-          <a className="servicos-lista-card-link" href="">
+          <div className="servicos-lista-card-link">
             <img
               src={resina}
               alt="Reparo de Carcaça"
@@ -84,20 +78,20 @@ export default function StnServicos() {
             <h3 className="servicos-lista-card-link-titulo">
               Reparo de Carcaça
             </h3>
-          </a>
+          </div>
         </li>
         <li className="servicos-lista-card">
-          <a className="servicos-lista-card-link" href="">
+          <div className="servicos-lista-card-link">
             <img
               src={limpeza}
               alt="Limpeza interna"
               className="servicos-lista-card-link-img"
             />
             <h3 className="servicos-lista-card-link-titulo">Limpeza interna</h3>
-          </a>
+          </div>
         </li>
         <li className="servicos-lista-card">
-          <a className="servicos-lista-card-link" href="">
+          <div className="servicos-lista-card-link">
             <img
               src={preventiva}
               alt="Manutenção Preventiva"
@@ -106,7 +100,7 @@ export default function StnServicos() {
             <h3 className="servicos-lista-card-link-titulo">
               Manutenção Preventiva
             </h3>
-          </a>
+          </div>
         </li>
       </ul>
     </section>

@@ -1,7 +1,9 @@
 import Header from "./assets/components/Header";
 import Div from "./assets/components/Div";
 import Aside from "./assets/components/Aside";
+import Atencao from "./assets/components/Atencao";
 import StnServicos from "./assets/components/StnServicos";
+import Modal from "./assets/components/Modal";
 import StnProcessos from "./assets/components/StnProcessos";
 import StnCTA from "./assets/components/StnCTA";
 import StnSobre from "./assets/components/StnSobre";
@@ -22,7 +24,9 @@ function App() {
             <Aside />
           </div>
         </main>
+        <Atencao />
         <StnServicos />
+        <Modal />
         <StnProcessos />
         <StnCTA />
         <StnSobre />
